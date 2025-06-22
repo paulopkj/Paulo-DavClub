@@ -1,0 +1,584 @@
+:root {
+    font-size: 16px;
+    --orange: #D86700;
+    --black: #131200;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(245, 114, 7, 0.932);
+
+
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: #FFFFFF;
+}
+
+
+/* SEÇÃO DE TODAS AS IMGENS */
+
+section {
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    max-width: 1200px;
+}
+
+
+
+/* LOGO PRINCIPAL MAIN ( GF ) */
+
+
+.logo-main {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.logo-main:hover {
+   transform: scale(1.5);
+
+}
+
+
+/* LOGO DO WHATZAPP WEB DO LADO DIREITO DA TELA */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* MENU PRINCIPAL */
+
+.header-galpao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: var(--border);
+    background: var(--bg);
+     
+}
+
+
+
+/* ELEMENOS DO MENU PRINCIPAL */
+
+.header-galpao section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    
+}
+
+
+
+/* MENU PRINCIPAL: ( HOME, UNIDADES, MODALIDADEAS ETC... */
+
+
+.nav-nomes a {
+    color: var(--orange);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+
+
+/* MENU PRINCIPAL: ( HOME, UNIDADES ETC... ) HOVER/EFEITOS */
+
+.nav-nomes a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-decoration-color: var(--orange);
+
+
+}
+
+
+
+/* INCONES DO MENU PRINCIPAL LUPA E CARINHO */
+
+.icons-incones img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+
+
+/* INCONES DO MENU PRINCIPAL LUPA E CARINHO HOVER */
+
+.icons-incones img:hover {
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+/* BUTÃO: INSCREVA-SE! */
+
+.btn-1 {
+    display: inline-block;
+    background: var(--orange);
+    border: none;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+/* BUTÃO: INSCREVA-SE! HOVER/EFEITOS */
+
+
+.btn-1:hover {
+    background: #da8b46f0;
+    color: var(--black);
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+/* HOME CONTAINER OU CONTEUDOS */
+
+.home-container {
+    background: url("./Imagem-familia.jpg");
+    height: 100vh;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* HOME CONTAINER OU CONTEUDOS SECTION */
+
+.home-container section {
+    display: flex;
+    min-width: 100vh;
+    align-items: center;
+    
+}
+
+
+
+/* NOME PRINCIPAL GALPÃO FITINESS / H1 / P */
+
+.home-container h1 {
+    font-size: 5rem;
+    color: var(--orange);
+    font-weight: 900;
+
+}
+
+.home-container h1 span {
+    color: #FFFFFF;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.home-container p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    max-width: 40rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+/* SECTION: SOBRE NÓS */
+
+.about {
+    background: url("./Imagem-sobre-nos.jpg");
+    height: 100vh;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    
+}
+
+
+/* NOME: SOBRE NÓS (SOBRE) */
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--orange);
+    font-weight: 900;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    
+}
+
+/* NOME: SOBRE NÓS (NÓS) */
+
+.title span {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+
+}
+
+
+
+/* SOBRE NÓS: div"row" ELEMENTOS */
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+
+
+.about .row .content {
+    padding: 2rem;
+
+}
+
+/* NOME: QUEM SOMOS */
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: var(--orange);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+/* QUEM SOMOS: PARAGRAFO */
+
+ .about .row .content p { 
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    line-height: 1.7;
+    
+}
+
+
+/* NOME: NOSSAS MODALIDADES */
+
+.title-2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    color: #D86700;
+
+}
+
+
+/* NOME: NOSSAS (MODALIDADES) */
+
+.title-2 span {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+
+
+}
+
+
+
+/* NOSSOS PLANOS: div"box-container" */
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+.menu .box-container .box {
+    padding: 5rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    text-align: center;
+     box-shadow: 0 0 15px rgba(240, 94,
+    4, 0.923);
+    background: var(--black);
+
+}
+
+
+
+/* CAIXAS DOS PLANOS: EFEITO HOUVER  */
+
+.menu .box-container .box:hover {
+    background: var(--black);
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* NOSSOS PLANOS / TAMANHO DAS IMAGENS */
+
+.menu .box-container .box img {
+ 
+    height: 20rem;
+    width: 22rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+    cursor: pointer;
+
+  
+}
+
+
+
+/* NOMES DAS MODALIDADE EX: MUSCULAÇÃO, CROSSFIT ETC... */
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+    
+}
+
+
+
+/* VALORES DAS MODALIDADES */
+
+.menu .box-container .box .price-preço {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+}
+
+
+
+/* DESCRIÇÃO DAS MODALIDADES: PREÇOS */
+
+
+.menu .box-container .box .price-preço span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #FFFFFF;
+    font-weight: 300;
+    display: block;
+    margin-top: 0.5rem;
+
+}
+
+
+
+/* O QUE NOSSOS ALUNOS DIZEM: CAIXAS EXTERNAS DAS IMAGENS */
+
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    background: var(--black);
+    box-shadow: 0 0 15px rgba(240, 94,
+    4, 0.923);
+    margin-bottom: 35px;
+
+}
+
+
+
+/* O QUE NOSSOS ALUNOS DIZEM PARAGRAFO */
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    line-height: 1.7;
+    padding: 2rem 0;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+
+
+/* ESTILIZAÇÃO DAS IMAGENS O QUE NOSSOS ALUNOS DIZEM */
+
+.review .box-container .box img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+    margin-bottom: 1rem;
+    margin-top: 30px;
+    
+}
+
+
+/* O QUE OS NOSSOS ALUNOS DIZEM: ESTILIZAÇÃO DO H3 */
+
+.review .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    
+}
+
+
+/* NOME: AVALIAÇÃO DOS NOSSOS ALUNOS */
+
+
+.title {
+    margin-bottom: 4rem;
+
+}
+
+
+/* AVALIAÇÃO DOS NOSSOS ALUNOS NUMEROS DE ESTRELAS*/
+
+.rating-avaliacao{
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating-avaliacao:hover,
+.rating-avaliacao:hover ~ .star {
+  color: gold;
+}
+
+.rating-avaliacao.active {
+  color: gold;
+
+}
+
+
+
+/* ESTILIZAÇÃO DO ENDEREÇO */
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--black);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+}
+
+
+
+
+/* ESTILIZAÇÃO DO FOOTER RODA PÉ */
+
+.footer {
+    text-align: center;
+
+}
+
+
+/* ESTILIZAÇÃO DO FOOTER RODA PÉ: CAIXA ESTERNA */
+
+.footer .footer-content {
+    padding: 2rem;
+    background: var(--black);
+    border-top: var(--border);
+    box-shadow: 0 0 15px rgba(240, 94,
+    4, 0.923);
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+
+}
+
+
+/* FOTER OU RODA PÉ: PARAGRAFO */
+
+.footer .footer-content p {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+/* FOTER OU RODA PÉ: IMAGEM */
+
+.footer .footer-content img {
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+
+}
+
+/* FOTER OU RODA PÉ IMAGEM: HOUVER EFEITO */
+
+.footer .footer-content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
+}
+
