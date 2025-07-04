@@ -384,8 +384,8 @@ section {
 .menu .box-container .box img {
  
     height: 20rem;
-    width: 22rem;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 15px rgba(240, 94, 4, 0.923);
     cursor: pointer;
